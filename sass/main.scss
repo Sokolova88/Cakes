@@ -7,11 +7,13 @@
 @import './utils/placeholders';
 
 // Base
+@import './base/normalize';
 @import './base/common';
 
 // Components
-@import './components/navMenuBtn';
 @import './components/navMenu';
+@import './components/navMenuBtn';
+@import './components/contacts';
 
 // Layouts
 @import './layouts/header';
