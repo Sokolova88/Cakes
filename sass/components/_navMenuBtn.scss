@@ -1,0 +1,33 @@
+.nav-menu__button {
+  min-height: 40px;
+  min-width: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.nav-menu__button--close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.nav-menu--close {
+  color: #bea495;
+  &:hover,
+  &:focus {
+    color: #fff8f3;
+  }
+}
