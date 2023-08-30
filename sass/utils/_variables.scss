@@ -3,7 +3,18 @@ $mainFont: 'Comfortaa', cursive;
 $headerFont: 'Yeseva One', cursive;
 
 // Colors
+$mainTextColor: #000000;
+$accentColor: #7b6152;
+$lightColor: #fafafa;
+$decorColor: #bea495;
+$secondaryDecorColor: #e55757;
 
 // Bg
+$mainBg: #fff8f3;
+$accentBg: #a5978e;
+
+$btnBg: #ffbd59;
 
 //Animation Properties
+$duration: 500ms;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
