@@ -1,0 +1,6 @@
+// Flex position
+@mixin flex($dtype: flex, $jc: center, $alit: center) {
+  display: $dtype;
+  justify-content: $jc;
+  align-items: $alit;
+}
