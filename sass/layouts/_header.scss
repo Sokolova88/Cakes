@@ -1,0 +1,4 @@
+.header__flex {
+  min-height: 72px;
+  @include flex($jc: space-between);
+}
