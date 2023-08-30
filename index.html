@@ -9,7 +9,7 @@
       content="Замовити торт у Харкові. Замовити капкейки у Харкові. Капкейки на замовлення. Торт на замовлення у Харкові. Торт Харків Рогань Пролетарська Введенка Тернова Покровка Лизогубівка. Натуральні торти у Харкові. Домашній торт на замовлення. Капкейки купити у Харкові. Торт купити у Харкові. Великий вибір начинок для торта. Замовити торт на День народження, торт дитині, торт на 1 рік, хрестини, ювілей, весілля, корпоратив. Кондитер домашній. Заказать торт в Харькове.  Заказать капкейки в Харькове. Капкейки на заказ. Торт на заказ в Харькове. Торт Харьков Рогань Пролетарская Введенка Терновая Покровка Лизогубовка. Натуральные торты в Харькове. Домашний торт на заказ. Капкейки купить в Харькове. Торт купить в Харькове.  Большой выбор начинок для торта. Заказать торт на День рождения, торт ребенку, торт на 1 годик, крестины, юбилей, свадьбу, корпоратив. Домашний кондитер. "
     />
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="./images/icons/logo.png" />
+    <link rel="shortcut icon" type="image/png" href="./images/icons/favicon/favicon.png" />
     <title>Tasty for you | Смачно для вас | Вкусно для вас</title>
 
     <!-- Fonts -->
@@ -20,30 +20,38 @@
       rel="stylesheet"
     />
 
-    <!-- Normalize css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-
     <!-- Common css -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="container">
         <div class="header__flex">
+          <!-- Logo -->
           <a href="./index.html"
             ><img
               class="logo"
-              src="./images/icons/logo.png"
+              src="./images/icons/logo/logo.png"
               alt="Логотип компанії"
-              width="60"
-              height="60"
+              width="50"
+              height="50"
           /></a>
-
+          <!-- Navigate -->
           <nav class="nav-menu">
-            <ul class="nav-menu__list">
+            <!-- Burger menu btn Open-->
+            <button
+              class="nav-menu__button js-open-menu"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg class="nav-menu--open icon" width="30" height="25">
+                <use href="./images/icons/sprite.svg#icon-burger-open"></use>
+              </svg>
+            </button>
+            <!-- Nav menu -->
+            <ul class="nav-menu__list nav-menu__list--desk">
               <li class="nav-menu__item"><a href="" class="nav-menu__link">про мене</a></li>
               <li class="nav-menu__item"><a href="" class="nav-menu__link">начинки</a></li>
               <li class="nav-menu__item"><a href="" class="nav-menu__link">галерея</a></li>
@@ -51,19 +59,54 @@
               <li class="nav-menu__item"><a href="" class="nav-menu__link">контакти</a></li>
             </ul>
           </nav>
+          <!-- Contacts -->
           <div class="contacts">
-            <a class="contacts__phone" href="tel:+380661388205">8 066 138 82 05</a>
+            <a class="contacts__phone" href="tel:+380661388205">
+              <svg class="icon-phone icon" width="18" height="18">
+                <use href="./images/icons/sprite.svg#icon-phone"></use>
+              </svg>
+              8 066 138 82 05</a
+            >
           </div>
-          <button
-            class="nav-menu__button"
-            type="button"
-            aria-expanded="false"
-            aria-controls="nav-menu"
-          >
-            <span class="nav-menu__button--line"></span>
-          </button>
         </div>
       </div>
     </header>
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="nav-menu__button nav-menu__button--close js-close-menu">
+        <svg class="nav-menu--close icon" width="30" height="30">
+          <use href="./images/icons/sprite.svg#icon-burger-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="nav-menu__item mobile-menu__item">
+          <a href="" class="nav-menu__link mobile-menu__link">про мене</a>
+        </li>
+        <li class="nav-menu__item mobile-menu__item">
+          <a href="" class="nav-menu__link mobile-menu__link">начинки</a>
+        </li>
+        <li class="nav-menu__item mobile-menu__item">
+          <a href="" class="nav-menu__link mobile-menu__link">галерея</a>
+        </li>
+        <li class="nav-menu__item mobile-menu__item">
+          <a href="" class="nav-menu__link mobile-menu__link">відгуки</a>
+        </li>
+        <li class="nav-menu__item mobile-menu__item">
+          <a href="" class="nav-menu__link mobile-menu__link">контакти</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Script for body scroll lock -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script for dynamic operation of the mobile-burger-menu -->
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
