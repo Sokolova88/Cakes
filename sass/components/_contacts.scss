@@ -1,0 +1,19 @@
+// Contacts
+.contacts__phone {
+  @include flex($alit: flex-end);
+
+  font-size: 16px;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+  }
+}
+
+.icon-phone {
+  margin-right: 3px;
+}
