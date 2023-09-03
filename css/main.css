@@ -42,6 +42,18 @@ img {
   overflow: hidden;
 }
 
+.hero__button {
+  display: inline-block;
+  padding: 16px 24px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  color: #000000;
+  cursor: pointer;
+}
+
 /*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -486,4 +498,120 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.hero-section {
+  margin: 0 auto;
+  background-color: #a5978e;
+  background-image: url("../../images/cakes/cake-s.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: clip;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url("../images/cakes/cake-m.jpg");
+  }
+}
+@media screen and (min-width: 1000px) {
+  .hero-section {
+    max-width: 1600px;
+    height: 600px;
+    background-image: url("../images/cakes/cake-m.jpg");
+  }
+}
+@media screen and (min-width: 1000px) and (min-device-pixel-ratio: 2), screen and (min-width: 1000px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1000px) and (min-resolution: 192dpi), screen and (min-width: 1000px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url("../images/cakes/cake-l.jpg");
+  }
+}
+
+.hero__wrap {
+  width: 220px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .hero__wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: calc(1000px - 1px)) {
+  .hero__wrap {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .hero__wrap {
+    width: 350px;
+    height: 600px;
+  }
+}
+
+.hero__title {
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: calc(768px - 1px)) {
+  .hero__title {
+    padding-top: 30px;
+  }
+}
+
+.hero__content {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.hero__button {
+  border: 2px solid #000000;
+  background-color: #ffbd59;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), border 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), border 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero__button:hover {
+  color: #fafafa;
+  border: 2px solid #fafafa;
+}
+
+.hero__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #7b6152;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), border 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), border 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1), border 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1), border 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__button:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }/*# sourceMappingURL=main.css.map */
