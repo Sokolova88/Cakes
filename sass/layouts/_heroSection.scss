@@ -1,0 +1,107 @@
+// Section Hero
+.hero-section {
+  margin: 0 auto;
+
+  background-color: $accentBg;
+  background-image: url('../../images/cakes/cake-s.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow-x: clip;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/cakes/cake-m.jpg');
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    height: 600px;
+
+    background-image: url('../images/cakes/cake-m.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/cakes/cake-l.jpg');
+    }
+  }
+}
+
+.hero__wrap {
+  width: 220px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
+    width: 280px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 350px;
+    height: 600px;
+  }
+}
+
+.hero__title {
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+
+  @media screen and (max-width: calc(#{$tablet} - 1px)) {
+    padding-top: 30px;
+  }
+}
+
+.hero__content {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.hero__button {
+  @extend %button;
+  border: 2px solid $mainTextColor;
+  background-color: $btnBg;
+  position: relative;
+  z-index: 1;
+  transition: color $duration $timing-function, border $duration $timing-function,
+    background-color $duration $timing-function;
+
+  &:hover {
+    color: $lightColor;
+    border: 2px solid $lightColor;
+  }
+}
+
+.hero__button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: $accentColor;
+  transform-origin: center;
+  transform: scale(0);
+  transition: transform $duration $timing-function, color $duration $timing-function,
+    border $duration $timing-function, background-color $duration $timing-function;
+}
+
+.hero__button:hover::before {
+  transform: scale(1);
+}
