@@ -1,0 +1,14 @@
+%button {
+  display: inline-block;
+  padding: 16px 24px;
+
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+
+  border: none;
+  border-radius: 2px;
+  color: $mainTextColor;
+
+  cursor: pointer;
+}
