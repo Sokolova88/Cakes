@@ -1,0 +1,44 @@
+.about {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background-color: $accentBg;
+  color: $darkColor;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 78px;
+  }
+}
+
+.about__wrap {
+  padding-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    & > div {
+      flex-basis: 50%;
+    }
+  }
+}
+
+.about__title {
+  margin-bottom: 20px;
+}
+
+.about__text {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+  color: $darkColor;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 22px;
+  }
+}
