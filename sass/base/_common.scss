@@ -15,6 +15,7 @@ body {
 .container {
   padding: 0 10px;
   margin: 0 auto;
+  position: relative;
 
   @media screen and (min-width: $mobile) {
     width: 480px;
@@ -37,6 +38,7 @@ body {
 .section {
   padding-top: 50px;
 
+  overflow-x: clip;
   @media screen and (min-width: $tablet) {
     padding-top: 150px;
   }
@@ -46,14 +48,47 @@ body {
   }
 }
 
+.section__decor::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+
+  background-image: url('../../images/icons/favicon/favicon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section__decor::after {
+  content: '';
+  display: block;
+  width: 100vw;
+  height: 1px;
+  background-color: $accentColor;
+  position: absolute;
+  left: 44px;
+  bottom: 6px;
+}
+
 .section-title {
   font-family: $headerFont;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.13;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 28px;
+    line-height: 1.15;
+  }
 
   @media screen and (min-width: $desktop) {
     font-size: 40px;
-    line-height: 1.15;
   }
 }
 
