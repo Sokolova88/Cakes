@@ -1,6 +1,6 @@
 body {
   font-family: $mainFont;
-  font-size: 10px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.1;
@@ -39,9 +39,9 @@ body {
   padding-top: 50px;
 
   overflow-x: clip;
-  @media screen and (min-width: $tablet) {
-    padding-top: 150px;
-  }
+  // @media screen and (min-width: $tablet) {
+  //   padding-top: 150px;
+  // }
 
   @media screen and (min-width: calc(#{$tablet} + 1px)) and (max-width: calc(#{$laptop} - 1px)) {
     padding-top: 132px;
@@ -75,7 +75,7 @@ body {
   bottom: 6px;
 }
 
-.section-title {
+.section__title {
   font-family: $headerFont;
   font-size: 20px;
   line-height: 1.13;
