@@ -15,7 +15,6 @@ body {
 .container {
   padding: 0 10px;
   margin: 0 auto;
-  position: relative;
 
   @media screen and (min-width: $mobile) {
     width: 480px;
@@ -46,6 +45,9 @@ body {
   @media screen and (min-width: calc(#{$tablet} + 1px)) and (max-width: calc(#{$laptop} - 1px)) {
     padding-top: 132px;
   }
+}
+.section__decor {
+  position: relative;
 }
 
 .section__decor::before {
@@ -80,7 +82,7 @@ body {
   font-size: 20px;
   line-height: 1.13;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
     font-size: 28px;
@@ -92,6 +94,9 @@ body {
   }
 }
 
+.title {
+  text-align: center;
+}
 .icon {
   fill: currentColor;
 }
