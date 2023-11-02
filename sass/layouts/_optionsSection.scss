@@ -1,0 +1,44 @@
+.options__swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.options__swiper .swiper-pagination-fraction {
+  color: $darkColor;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.options__swiper--img {
+  min-width: 290px;
+  min-height: 290px;
+  border-radius: 2px;
+  box-shadow: 5px 5px 16px -4px #a5978e;
+  overflow: hidden;
+}
+
+.options__desc {
+  max-width: 500px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 20px auto 0;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.options__social-link {
+  display: block;
+  margin-top: 10px;
+}
