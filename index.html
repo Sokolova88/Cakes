@@ -19,7 +19,8 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&family=Yeseva+One&display=swap"
       rel="stylesheet"
     />
-
+    <!-- Swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- Common css -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -122,7 +123,7 @@
       <!-- Menu Section -->
       <section class="menu section">
         <div class="container section__decor">
-          <h2 class="menu__title section__title">Асортимент</h2>
+          <h2 class="title section__title">Асортимент</h2>
           <p class="menu__text">
             Я використовую тільки найкращі якісні та свіжі продукти, щоб смачний та свіжий тортик
             створив незабутню атмосферу на вашому святі.
@@ -749,6 +750,152 @@
           </ul>
         </div>
       </section>
+
+      <!-- Options Section -->
+      <section class="options section">
+        <div class="container section__decor">
+          <h2 class="section__title title">Галерея моїх робіт</h2>
+          <!-- Slider with assortment -->
+          <div class="swiper options__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper options__swiper--wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide options__swiper--slide">
+                <div class="options__swiper--img">
+                  <img
+                    loading="lazy"
+                    src="./images/cakes/1.jpg"
+                    alt="Тортик дитячий на день народження"
+                  />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div class="swiper-slide options__swiper--slide">
+                <div class="options__swiper--img">
+                  <img loading="lazy" src="./images/cakes/2.jpg" alt="Тортик на день народження" />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div class="swiper-slide options__swiper--slide">
+                <div class="options__swiper--img">
+                  <img
+                    loading="lazy"
+                    src="./images/cakes/3.jpg"
+                    alt="Тортик для дівчини на день народження"
+                  />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div class="swiper-slide options__swiper--slide">
+                <div class="options__swiper--img">
+                  <img
+                    loading="lazy"
+                    src="./images/cakes/4.jpg"
+                    alt="Тортик дитячий на день народження"
+                  />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div class="swiper-slide options__swiper--slide">
+                <div class="options__swiper--img">
+                  <img loading="lazy" src="./images/cakes/5.jpg" alt="Тортик святковий" />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div class="swiper-slide options__swiper--slide">
+                <div class="options__swiper--img">
+                  <img loading="lazy" src="./images/cakes/6.jpg" alt="Тортик святковий" />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div class="swiper-slide options__swiper--slide">
+                <div class="options__swiper--img">
+                  <img loading="lazy" src="./images/cakes/7.jpg" alt="Тортик на свято з малиною" />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div class="swiper-slide options__swiper--slide">
+                <div class="options__swiper--img">
+                  <img loading="lazy" src="./images/cakes/8.jpg" alt="Тортик для лікаря" />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div class="swiper-slide options__swiper--slide">
+                <div class="options__swiper--img">
+                  <img loading="lazy" src="./images/cakes/9.jpg" alt="Тортик для чоловіка" />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div class="swiper-slide options__swiper--slide">
+                <div class="options__swiper--img">
+                  <img loading="lazy" src="./images/cakes/10.jpg" alt="Тортик для матусі" />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div class="swiper-slide options__swiper--slide">
+                <div class="options__swiper--img">
+                  <img loading="lazy" src="./images/cakes/11.jpg" alt="Тортик для чоловіка" />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div class="swiper-slide options__swiper--slide">
+                <div class="options__swiper--img">
+                  <img loading="lazy" src="./images/cakes/12.jpg" alt="Тортик дитячий" />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div class="swiper-slide options__swiper--slide">
+                <div class="options__swiper--img">
+                  <img loading="lazy" src="./images/cakes/14.jpg" alt="Тортик для чоловіка" />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div class="swiper-slide options__swiper--slide">
+                <div class="options__swiper--img">
+                  <img loading="lazy" src="./images/cakes/15.jpg" alt="Тортик для матусі" />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div class="swiper-slide options__swiper--slide">
+                <div class="options__swiper--img">
+                  <img loading="lazy" src="./images/cakes/16.jpg" alt="Тортик для дівчинки" />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination for slider-->
+            <div class="swiper__pagination options__swiper--pagination"></div>
+          </div>
+          <div class="options__desc">
+            <p class="options__desc--text">
+              Це зовсім не все, тут ви можете побачити лише маленьку частину моїх робіт! Більше
+              різних дизайнів дивіться на моїй сторінці в
+              <a
+                class="link social__link"
+                href="https://www.instagram.com/ustimenko267"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Посилання на Instagram"
+                >Instagram.</a
+              >
+            </p>
+            <a
+              class="options__social-link link social__link"
+              href="https://www.instagram.com/ustimenko267"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="Посилання на Instagram"
+            >
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section"></section>
     </main>
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
@@ -776,6 +923,10 @@
         </li>
       </ul>
     </div>
+
+    <!-- Script for swiper slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
 
     <!-- Script for body scroll lock -->
     <script
