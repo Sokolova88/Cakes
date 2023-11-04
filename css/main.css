@@ -900,4 +900,39 @@ body {
 .options__social-link {
   display: block;
   margin-top: 10px;
+}
+
+.feedback__desc {
+  max-width: 500px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 20px auto;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .feedback__desc {
+    font-size: 16px;
+  }
+}
+
+.feedback__swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 40px;
+}
+
+.feedback__swiper .swiper-pagination-fraction {
+  color: #462a19;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+.feedback__swiper--img {
+  min-width: 300px;
+  min-height: 405px;
+  border-radius: 2px;
+  -webkit-box-shadow: 5px 5px 16px -4px #a5978e;
+          box-shadow: 5px 5px 16px -4px #a5978e;
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */
