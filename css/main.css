@@ -935,4 +935,64 @@ body {
   -webkit-box-shadow: 5px 5px 16px -4px #a5978e;
           box-shadow: 5px 5px 16px -4px #a5978e;
   overflow: hidden;
+}
+
+.promo {
+  max-width: 1600px;
+  height: 200px;
+  padding-top: 20px;
+  background-color: #a5978e;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 151, 118, 0.32)), to(rgba(99, 61, 32, 0.85))), url("../images/cakes/promo-s.jpg");
+  background-image: linear-gradient(to top, rgba(194, 151, 118, 0.32), rgba(99, 61, 32, 0.85)), url("../images/cakes/promo-s.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: clip;
+  margin: 50px auto 0;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .promo {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 151, 118, 0.32)), to(rgba(99, 61, 32, 0.85))), url("../images/cakes/promo-m.jpg");
+    background-image: linear-gradient(to top, rgba(194, 151, 118, 0.32), rgba(99, 61, 32, 0.85)), url("../images/cakes/promo-m.jpg");
+  }
+}
+@media screen and (min-width: 1000px) {
+  .promo {
+    height: 350px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 151, 118, 0.32)), to(rgba(99, 61, 32, 0.85))), url("../images/cakes/promo-m.jpg");
+    background-image: linear-gradient(to top, rgba(194, 151, 118, 0.32), rgba(99, 61, 32, 0.85)), url("../images/cakes/promo-m.jpg");
+  }
+}
+@media screen and (min-width: 1000px) and (min-device-pixel-ratio: 2), screen and (min-width: 1000px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1000px) and (min-resolution: 192dpi), screen and (min-width: 1000px) and (min-resolution: 2dppx) {
+  .promo {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 151, 118, 0.32)), to(rgba(99, 61, 32, 0.85))), url("../images/cakes/promo-l.jpg");
+    background-image: linear-gradient(to top, rgba(194, 151, 118, 0.32), rgba(99, 61, 32, 0.85)), url("../images/cakes/promo-l.jpg");
+  }
+}
+
+.promo__text {
+  max-width: 350px;
+  margin: 0 auto;
+  font-family: "Yeseva One", cursive;
+  color: #fafafa;
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .promo__text {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .promo__text {
+    font-size: 24px;
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .promo__text {
+    font-size: 32px;
+    max-width: 600px;
+  }
 }/*# sourceMappingURL=main.css.map */
