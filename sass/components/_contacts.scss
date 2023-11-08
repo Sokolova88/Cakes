@@ -9,6 +9,11 @@
     color: $accentColor;
   }
 
+  &:hover .icon-phone,
+  &:focus .icon-phone {
+    color: $darkColor;
+  }
+
   @media screen and (min-width: $tablet) {
     font-size: 14px;
   }
@@ -16,4 +21,5 @@
 
 .icon-phone {
   margin-right: 3px;
+  color: $accentColor;
 }
