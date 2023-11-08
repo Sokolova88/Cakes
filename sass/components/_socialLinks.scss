@@ -1,0 +1,8 @@
+.social__link {
+  color: $accentColor;
+
+  &:hover,
+  &:focus {
+    color: $darkColor;
+  }
+}
