@@ -42,3 +42,7 @@
   display: block;
   margin-top: 10px;
 }
+
+.options__social-link--anim {
+  animation: puls 3000ms ease-out 1000ms infinite alternate;
+}
