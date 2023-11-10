@@ -26,6 +26,8 @@
 
 .nav-menu--close {
   color: #bea495;
+  transition: color $duration $timing-function;
+
   &:hover,
   &:focus {
     color: #fff8f3;

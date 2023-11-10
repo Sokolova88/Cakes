@@ -3,6 +3,7 @@
   @include flex($alit: flex-end);
 
   font-size: 16px;
+  transition: color $duration $timing-function;
 
   &:hover,
   &:focus {
@@ -22,4 +23,5 @@
 .icon-phone {
   margin-right: 3px;
   color: $accentColor;
+  animation: swing 6s ease-in-out infinite forwards;
 }

@@ -30,6 +30,7 @@
   margin-bottom: 40px;
   border-radius: 2px;
   box-shadow: 5px 5px 16px -4px rgba(165, 151, 142, 1);
+  transition: transform $duration $timing-function;
 
   &:hover {
     transform: scale(1.03);
@@ -57,7 +58,7 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s;
+  transition: transform $duration $timing-function;
   transform-style: preserve-3d;
 }
 
@@ -82,6 +83,7 @@
 }
 
 .menu__flip-card-back {
+  transition: transform $duration $timing-function;
   transform: rotateY(180deg);
 }
 

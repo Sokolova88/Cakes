@@ -16,6 +16,7 @@
 .nav-menu__link {
   text-transform: uppercase;
   line-height: 1.5;
+  transition: color $duration $timing-function;
 
   &:hover,
   &:focus {
@@ -54,6 +55,7 @@
   display: block;
   font-size: 18px;
   color: $mainBg;
+  transition: color $duration $timing-function;
 
   &:hover,
   &:focus {
