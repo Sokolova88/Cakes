@@ -8,6 +8,14 @@
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
 
+    mobileMenu.querySelectorAll('.nav-menu__link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('is-open');
+        bodyScrollLock.enableBodyScroll(document.body);
+      });
+    });
+
+    //Prevent document scrolling when mobileMenu is open
     const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
     bodyScrollLock[scrollLockMethod](document.body);
   };
