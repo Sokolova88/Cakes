@@ -461,23 +461,28 @@ body {
   fill: currentColor;
 }
 
-@media screen and (max-width: calc(768px - 1px)) {
+.nav-menu {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+@media screen and (min-width: 768px) {
   .nav-menu {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
   }
 }
 
 .nav-menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
+  display: none;
 }
-@media screen and (max-width: calc(768px - 1px)) {
+@media screen and (min-width: 768px) {
   .nav-menu__list {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
   }
 }
 
@@ -654,7 +659,7 @@ body {
 
 .hero__wrap {
   width: 220px;
-  height: 400px;
+  height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -665,14 +670,10 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
-}
-@media screen and (min-width: 768px) {
-  .hero__wrap {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 @media screen and (min-width: 768px) and (max-width: calc(1000px - 1px)) {
   .hero__wrap {
@@ -687,19 +688,10 @@ body {
 }
 
 .hero__title {
+  font-family: "Yeseva One", cursive;
   font-size: 28px;
   line-height: 1.2;
   letter-spacing: 1px;
-}
-@media screen and (max-width: calc(768px - 1px)) {
-  .hero__title {
-    padding-top: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero__title {
-    font-size: 28px;
-  }
 }
 @media screen and (min-width: 1000px) {
   .hero__title {
