@@ -1,15 +1,17 @@
 .nav-menu {
-  @media screen and (max-width: calc(#{$tablet} - 1px)) {
-    order: 1;
+  order: 1;
+
+  @media screen and (min-width: $tablet) {
+    order: 0;
   }
 }
 
 .nav-menu__list {
-  display: flex;
-  gap: 20px;
+  display: none;
 
-  @media screen and (max-width: calc(#{$tablet} - 1px)) {
-    display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 20px;
   }
 }
 
