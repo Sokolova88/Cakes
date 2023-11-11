@@ -1,0 +1,38 @@
+// Mobile menu wrap
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  padding: 60px;
+  background-color: $accentColor;
+
+  z-index: 999;
+
+  transform: translateY(-110%);
+  transition: transform $duration $timing-function;
+}
+
+.menu-container.is-open {
+  transform: translateY(0);
+  overflow-y: auto;
+}
+
+// Mobile menu ul
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.mobile-menu__link {
+  display: block;
+  font-size: 18px;
+  color: $mainBg;
+  transition: color $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $decorColor;
+  }
+}
