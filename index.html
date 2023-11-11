@@ -53,9 +53,15 @@
             </button>
             <!-- Nav menu -->
             <ul class="nav-menu__list nav-menu__list--desk">
-              <li class="nav-menu__item"><a href="#about" class="nav-menu__link">про мене</a></li>
-              <li class="nav-menu__item"><a href="#menu" class="nav-menu__link">начинки</a></li>
-              <li class="nav-menu__item"><a href="#options" class="nav-menu__link">галерея</a></li>
+              <li class="nav-menu__item">
+                <a href="#about" class="nav-menu__link">про мене</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#menu" class="nav-menu__link">начинки</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#options" class="nav-menu__link">галерея</a>
+              </li>
               <li class="nav-menu__item">
                 <a href="#feedbacks" class="nav-menu__link">відгуки</a>
               </li>
@@ -82,7 +88,7 @@
       <section class="hero hero-section">
         <div class="container">
           <div class="hero__wrap">
-            <h1 class="hero__title section__title">Створіть своє солодке свято!</h1>
+            <h1 class="hero__title">Створіть своє солодке свято!</h1>
             <p class="hero__content">
               Створіть особливу святкову атмосферу завдяки тортику та смаколикам мого власного
               виробництва. Все виготовляється 100% зі свіжих, натуральних та якісних інгредієнтів.
@@ -93,9 +99,9 @@
       </section>
 
       <!-- About section -->
-      <section class="about section">
+      <section id="about" class="about section">
         <div class="container section__decor">
-          <h2 id="about" class="about__title section__title">Познайомимось?</h2>
+          <h2 class="about__title section__title">Познайомимось?</h2>
           <div class="about__wrap">
             <div class="about__wrap-content">
               <p class="about__text">
@@ -756,9 +762,9 @@
       </section>
 
       <!-- Options Section -->
-      <section class="options section">
+      <section id="options" class="options section">
         <div class="container section__decor">
-          <h2 id="options" class="section__title title">Галерея моїх робіт</h2>
+          <h2 class="section__title title">Галерея моїх робіт</h2>
           <!-- Slider with assortment -->
           <div class="swiper options__swiper">
             <!-- Additional required wrapper -->
@@ -768,7 +774,7 @@
                 <div class="options__swiper--img">
                   <img
                     loading="lazy"
-                    src="./images/cakes/1.jpg"
+                    src="./images/cakes/2.jpg"
                     alt="Тортик дитячий на день народження"
                   />
                   <div class="swiper-lazy-preloader"></div>
@@ -776,7 +782,11 @@
               </div>
               <div class="swiper-slide options__swiper--slide">
                 <div class="options__swiper--img">
-                  <img loading="lazy" src="./images/cakes/2.jpg" alt="Тортик на день народження" />
+                  <img
+                    loading="lazy"
+                    src="./images/cakes/1.jpg"
+                    alt="Тортик дитячий на день народження"
+                  />
                   <div class="swiper-lazy-preloader"></div>
                 </div>
               </div>
@@ -899,9 +909,9 @@
       </section>
 
       <!-- Feedback Section -->
-      <section class="feedback section">
+      <section id="feedbacks" class="feedback section">
         <div class="container section__decor">
-          <h2 id="feedbacks" class="section__title title">Ваші відгуки</h2>
+          <h2 class="section__title title">Ваші відгуки</h2>
 
           <div class="feedback__desc">
             <p class="feedback__desc--text">
