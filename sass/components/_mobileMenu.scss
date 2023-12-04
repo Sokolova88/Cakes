@@ -1,4 +1,4 @@
-// Mobile menu wrap
+// ---------------Mobile menu wrap----------------
 .menu-container {
   position: fixed;
   top: 0;
@@ -20,7 +20,13 @@
   overflow-y: auto;
 }
 
-// Mobile menu ul
+// -------------Mobile menu ul-----------------
+
+.mobile-menu {
+  text-align: center;
+  padding-top: 50px;
+}
+
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -28,11 +34,12 @@
 .mobile-menu__link {
   display: block;
   font-size: 18px;
-  color: $mainBg;
+  font-weight: 600;
+  color: $lightColor;
   transition: color $duration $timing-function;
 
   &:hover,
   &:focus {
-    color: $decorColor;
+    color: $darkColor;
   }
 }
