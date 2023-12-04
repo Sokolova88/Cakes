@@ -93,7 +93,7 @@
               Створіть особливу святкову атмосферу завдяки тортику та смаколикам мого власного
               виробництва. Все виготовляється 100% зі свіжих, натуральних та якісних інгредієнтів.
             </p>
-            <button class="hero__button" type="button">Замовити</button>
+            <button class="hero__button js__modal-open" type="button">Замовити</button>
           </div>
         </div>
       </section>
@@ -1113,7 +1113,7 @@
             </ul>
           </div>
         </div>
-        <div class="footer__copyright">Copyright &copy; 2023 | Created by Anna Sokolova.</div>
+        <div class="footer__copyright">Copyright &copy; 2023 | Created by Anna SokoLova.</div>
       </footer>
     </main>
 
@@ -1144,12 +1144,66 @@
       </ul>
     </div>
 
+    <!-- Modal -->
+    <div class="backdrop js__backdrop backdrop--hidden">
+      <div class="modal js__modal">
+        <button class="modal__btn-close js__modal-close">
+          <svg class="nav-menu--close modal__btn-close--icon icon" width="30" height="30">
+            <use href="./images/icons/sprite.svg#icon-burger-close"></use>
+          </svg>
+        </button>
+        <div class="modal__content">
+          <p class="modal__text">Щоб зробити замовлення, зателефонуйте мені за номером</p>
+          <a class="modal__contacts__phone contacts__phone" href="tel:+380661388205">
+            <svg class="icon-phone icon" width="20" height="20">
+              <use href="./images/icons/sprite.svg#icon-phone"></use>
+            </svg>
+            8 066 138 82 05</a
+          >
+          <p class="modal__text">Або напишіть в зручний для вас месенджер</p>
+          <ul class="modal__footer--socials footer__socials">
+            <li class="modal__footer--socials-item footer__socials-item">
+              <a
+                class="options__social-link link social__link"
+                href="tg://resolve?domain=Ustimenko267"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Посилання на Telegram"
+              >
+                <svg class="icon" width="40" height="40">
+                  <use href="./images/icons/sprite.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__footer--socials-item footer__socials-item">
+              <a
+                class="options__social-link link social__link"
+                href="viber://chat?number=%2B380661388205"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Посилання на Viber"
+              >
+                <svg class="icon" width="40" height="40">
+                  <use href="./images/icons/sprite.svg#icon-viber"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <p class="modal__text modal__text--decor">Чекаю на ваше замовлення</p>
+        </div>
+      </div>
+    </div>
+
     <!-- Script for swiper slider -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
 
     <!-- A script for the smooth scroll. -->
     <script src="js/anchors.js"></script>
+
+    <!-- Script for modal window -->
+    <script src="js/modal.js"></script>
 
     <!-- Script for body scroll lock -->
     <script
@@ -1158,6 +1212,7 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+
     <!-- Script for dynamic operation of the mobile-burger-menu -->
     <script defer src="js/mobile-menu.js"></script>
   </body>
