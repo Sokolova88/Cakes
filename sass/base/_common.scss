@@ -6,6 +6,11 @@ body {
   line-height: 1.1;
 
   background-color: #fff8f3;
+
+  &.modal--open {
+    overflow-y: hidden;
+  }
+
   @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.2;
