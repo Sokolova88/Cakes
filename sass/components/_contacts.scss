@@ -3,11 +3,12 @@
   @include flex($alit: flex-end);
 
   font-size: 16px;
+  color: $accentColor;
   transition: color $duration $timing-function;
 
   &:hover,
   &:focus {
-    color: $accentColor;
+    color: $darkColor;
   }
 
   &:hover .icon-phone,
