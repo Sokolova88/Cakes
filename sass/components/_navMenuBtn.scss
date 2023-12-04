@@ -1,18 +1,5 @@
 .nav-menu__button {
-  min-height: 40px;
-  min-width: 40px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  outline: none;
-
+  @extend %menu__button;
   @media screen and (min-width: $tablet) {
     display: none;
   }
@@ -24,8 +11,8 @@
   right: 25px;
 }
 
-.nav-menu--close {
-  color: #bea495;
+.nav-menu__button .nav-menu--close {
+  // color: #bea495;
   transition: color $duration $timing-function;
 
   &:hover,
