@@ -585,9 +585,9 @@ body.modal--open {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
   color: #7b6152;
   -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -598,11 +598,6 @@ body.modal--open {
 }
 .contacts__phone:hover .icon-phone, .contacts__phone:focus .icon-phone {
   color: #462a19;
-}
-@media screen and (min-width: 768px) {
-  .contacts__phone {
-    font-size: 14px;
-  }
 }
 
 .icon-phone {
