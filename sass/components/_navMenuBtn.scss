@@ -1,7 +1,20 @@
+// -------------Button for navigate menu-----------------
+
 .nav-menu__button {
   @extend %menu__button;
+
   @media screen and (min-width: $tablet) {
     display: none;
+  }
+
+  & .nav-menu--close {
+    color: $lightColor;
+    transition: color $duration $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $darkColor;
+    }
   }
 }
 
@@ -9,14 +22,4 @@
   position: absolute;
   top: 25px;
   right: 25px;
-}
-
-.nav-menu__button .nav-menu--close {
-  // color: #bea495;
-  transition: color $duration $timing-function;
-
-  &:hover,
-  &:focus {
-    color: #fff8f3;
-  }
 }
