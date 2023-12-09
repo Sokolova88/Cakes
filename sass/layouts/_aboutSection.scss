@@ -5,6 +5,7 @@
   color: $darkColor;
 
   @media screen and (min-width: $tablet) {
+    position: relative;
     padding-bottom: 78px;
   }
 }
@@ -12,14 +13,14 @@
 .about__wrap {
   padding-bottom: 20px;
 
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 120px;
+  }
+}
 
-    & > div {
-      flex-basis: 50%;
-    }
+.about__wrap-content {
+  @media screen and (min-width: $tablet) {
+    width: 50%;
   }
 }
 
@@ -40,5 +41,18 @@
 
   @media screen and (min-width: $desktop) {
     font-size: 22px;
+  }
+}
+
+.about__wrap-img {
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 50%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: -30px;
   }
 }

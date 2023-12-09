@@ -893,6 +893,7 @@ body.modal--open {
 }
 @media screen and (min-width: 768px) {
   .about {
+    position: relative;
     padding-bottom: 78px;
   }
 }
@@ -900,19 +901,15 @@ body.modal--open {
 .about__wrap {
   padding-bottom: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .about__wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 20px;
+    padding-bottom: 120px;
   }
-  .about__wrap > div {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .about__wrap-content {
+    width: 50%;
   }
 }
 
@@ -935,6 +932,20 @@ body.modal--open {
 @media screen and (min-width: 1000px) {
   .about__text {
     font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__wrap-img {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .about__wrap-img {
+    top: -30px;
   }
 }
 
