@@ -380,7 +380,7 @@ body {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.1;
+  line-height: 1.4;
   background-color: #fff8f3;
 }
 body.modal--open {
@@ -389,7 +389,6 @@ body.modal--open {
 @media screen and (min-width: 1000px) {
   body {
     font-size: 14px;
-    line-height: 1.2;
   }
 }
 
@@ -920,7 +919,6 @@ body.modal--open {
 .about__text {
   margin-bottom: 20px;
   font-size: 14px;
-  line-height: 1.2;
   letter-spacing: 0.3px;
   color: #462a19;
 }
