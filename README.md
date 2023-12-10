@@ -11,6 +11,7 @@ Install locally via HTTPS or SSH.
 ## Technologies
 
 - HTML & CSS & JS
+- Mobile First
 - Desktop, tablet, mobile - adaptive layout.
 - SASS
 - BEM methodology
