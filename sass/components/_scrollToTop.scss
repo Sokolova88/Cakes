@@ -1,0 +1,55 @@
+// Button Scroll to top
+.btn-up {
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+  z-index: 9;
+
+  width: 50px;
+  height: 50px;
+  background-color: $accentColor;
+  border: 2px solid $btnBg;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 1;
+  transition: opacity $duration $timing-function, background-color $duration $timing-function,
+    border-color $duration $timing-function;
+
+  &:hover {
+    border-color: $accentColor;
+  }
+}
+
+.btn-up::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: $btnBg;
+  border-radius: 50%;
+
+  transform-origin: center;
+  transform: scale(0);
+  transition: transform $duration $timing-function, color $duration $timing-function,
+    border $duration $timing-function, background-color $duration $timing-function;
+}
+
+.btn-up:hover::before {
+  transform: scale(1);
+}
+
+.btn-up--hidden {
+  opacity: 0;
+}
+
+.btn-up__icon {
+  color: $lightColor;
+}
