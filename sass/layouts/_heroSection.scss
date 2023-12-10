@@ -36,10 +36,9 @@
 .hero__wrap {
   width: 220px;
   height: 450px;
-  display: flex;
+
+  @include flex($alit: flex-start);
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
   gap: 30px;
 
   @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
@@ -54,10 +53,7 @@
 
 .hero__title {
   font-family: $headerFont;
-
-  font-size: 28px;
-  line-height: 1.2;
-  letter-spacing: 1px;
+  @include fonts(700, 28px, 1.2, 1px);
 
   @media screen and (min-width: $desktop) {
     font-size: 40px;
@@ -65,9 +61,7 @@
 }
 
 .hero__content {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.2;
+  @include fonts(600, 14px, 1.2, 0.3px);
 
   @media screen and (min-width: $tablet) {
     font-size: 16px;

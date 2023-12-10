@@ -65,9 +65,7 @@
   z-index: 2;
   background-color: $secondaryDecorColor;
   border-radius: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex();
   font-size: 18px;
   color: $lightColor;
 }
@@ -115,8 +113,8 @@
 .menu___price,
 .menu__heading {
   font-family: $headerFont;
-  font-size: 16px;
-  line-height: 1.2;
+  @include fonts(700, 16px, 1.2, 0.3px);
+
   text-align: center;
   color: $darkColor;
 }

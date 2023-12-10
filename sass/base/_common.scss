@@ -1,9 +1,7 @@
 body {
   font-family: $mainFont;
-  font-size: 12px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 1.4;
+  @include fonts(400, 12px, 1.4, 0.3px);
 
   background-color: #fff8f3;
 
@@ -40,8 +38,8 @@ body {
 
 .section {
   padding-top: 50px;
-
   overflow-x: clip;
+
   @media screen and (min-width: $tablet) {
     padding-top: 90px;
   }
@@ -50,43 +48,43 @@ body {
     padding-top: 130px;
   }
 }
+
 .section__decor {
   position: relative;
   padding-bottom: 60px;
-}
 
-.section__decor::before {
-  content: '';
-  display: block;
-  width: 24px;
-  height: 24px;
+  &::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
 
-  position: absolute;
-  left: 20px;
-  bottom: 0;
+    position: absolute;
+    left: 20px;
+    bottom: 0;
 
-  background-image: url('../../images/icons/favicon/favicon.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+    background-image: url('../../images/icons/favicon/favicon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-.section__decor::after {
-  content: '';
-  display: block;
-  width: 100vw;
-  height: 1px;
-  background-color: $accentColor;
-  position: absolute;
-  left: 44px;
-  bottom: 6px;
+  &::after {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: $accentColor;
+    position: absolute;
+    left: 44px;
+    bottom: 6px;
+  }
 }
 
 .section__title {
   font-family: $headerFont;
-  font-size: 20px;
-  line-height: 1.13;
-  letter-spacing: 1px;
+  @include fonts(700, 20px, 1.13, 1px);
+
   margin-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
@@ -103,6 +101,7 @@ body {
 .title {
   text-align: center;
 }
+
 .icon {
   fill: currentColor;
 }

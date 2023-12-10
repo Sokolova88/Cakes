@@ -17,9 +17,7 @@
 
 .footer__inner {
   @media screen and (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex($jc: space-between);
     margin-bottom: 20px;
   }
 
@@ -63,7 +61,7 @@
 }
 
 .footer__socials {
-  @include flex;
+  @include flex();
   gap: 15px;
   margin-top: 15px;
 }

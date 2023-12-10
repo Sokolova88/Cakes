@@ -65,10 +65,9 @@
   max-height: 600px;
 
   text-align: center;
-  display: flex;
+
+  @include flex($jc: space-around);
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   gap: 15px;
 }
 
@@ -89,9 +88,7 @@
 }
 
 .modal__text {
-  font-size: 16px;
-  line-height: 1.4;
-  font-weight: 600;
+  @include fonts(600, 16px, 1.4, 0.3px);
   color: $darkColor;
 }
 

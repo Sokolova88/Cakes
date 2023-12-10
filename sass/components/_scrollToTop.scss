@@ -11,9 +11,7 @@
   border: 2px solid $btnBg;
   border-radius: 50%;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex();
 
   opacity: 1;
   transition: opacity $duration $timing-function, background-color $duration $timing-function,
