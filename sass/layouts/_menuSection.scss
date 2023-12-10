@@ -51,6 +51,27 @@
   }
 }
 
+.menu__item--new {
+  position: relative;
+}
+
+.menu__item--new::before {
+  content: attr(data-new);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50px;
+  z-index: 2;
+  background-color: $secondaryDecorColor;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: $lightColor;
+}
+
 .menu__flip-card {
   max-width: 450px;
   height: 300px;
