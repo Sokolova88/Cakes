@@ -377,10 +377,11 @@ summary {
 
 body {
   font-family: "Comfortaa", cursive;
-  font-size: 12px;
   font-style: normal;
   font-weight: 400;
+  font-size: 12px;
   line-height: 1.4;
+  letter-spacing: 0.3px;
   background-color: #fff8f3;
 }
 body.modal--open {
@@ -437,7 +438,6 @@ body.modal--open {
   position: relative;
   padding-bottom: 60px;
 }
-
 .section__decor::before {
   content: "";
   display: block;
@@ -451,7 +451,6 @@ body.modal--open {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .section__decor::after {
   content: "";
   display: block;
@@ -465,6 +464,7 @@ body.modal--open {
 
 .section__title {
   font-family: "Yeseva One", cursive;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.13;
   letter-spacing: 1px;
@@ -736,15 +736,15 @@ body.modal--open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 15px;
 }
 
@@ -766,9 +766,10 @@ body.modal--open {
 }
 
 .modal__text {
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.4;
-  font-weight: 600;
+  letter-spacing: 0.3px;
   color: #462a19;
 }
 
@@ -900,16 +901,16 @@ body.modal--open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 30px;
 }
 @media screen and (min-width: 768px) and (max-width: calc(1000px - 1px)) {
@@ -926,6 +927,7 @@ body.modal--open {
 
 .hero__title {
   font-family: "Yeseva One", cursive;
+  font-weight: 700;
   font-size: 28px;
   line-height: 1.2;
   letter-spacing: 1px;
@@ -937,9 +939,10 @@ body.modal--open {
 }
 
 .hero__content {
-  font-size: 14px;
   font-weight: 600;
+  font-size: 14px;
   line-height: 1.2;
+  letter-spacing: 0.3px;
 }
 @media screen and (min-width: 768px) {
   .hero__content {
@@ -989,7 +992,6 @@ body.modal--open {
 .about__text {
   margin-bottom: 20px;
   font-size: 14px;
-  letter-spacing: 0.3px;
   color: #462a19;
 }
 @media screen and (min-width: 768px) {
@@ -1163,8 +1165,10 @@ body.modal--open {
 .menu___price,
 .menu__heading {
   font-family: "Yeseva One", cursive;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.2;
+  letter-spacing: 0.3px;
   text-align: center;
   color: #462a19;
 }
@@ -1307,7 +1311,6 @@ body.modal--open {
   font-family: "Yeseva One", cursive;
   color: #fafafa;
   font-size: 15px;
-  line-height: 1.4;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -1356,12 +1359,12 @@ body.modal--open {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 20px;
   }
 }
