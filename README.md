@@ -1,6 +1,6 @@
 # Cakes
 
-![Logo](https://github.com/Sokolova88/Cakes/raw/main/images/favicon/favicon.png)
+![Logo](https://github.com/Sokolova88/Cakes/main/images/favicon/favicon.png)
 
 ###### Cakes is a landing page - a business card for confectioner Nadezhda.
 
