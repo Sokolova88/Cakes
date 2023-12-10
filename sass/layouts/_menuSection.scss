@@ -15,6 +15,10 @@
   font-family: $headerFont;
   font-size: 18px;
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+  }
 }
 
 .menu__list {
@@ -107,8 +111,4 @@
 
 .menu__desc-text {
   margin-bottom: 5px;
-}
-
-.menu__list-cups {
-  padding-bottom: 20px;
 }

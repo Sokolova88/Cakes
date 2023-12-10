@@ -42,16 +42,17 @@ body {
   padding-top: 50px;
 
   overflow-x: clip;
-  // @media screen and (min-width: $tablet) {
-  //   padding-top: 150px;
-  // }
+  @media screen and (min-width: $tablet) {
+    padding-top: 90px;
+  }
 
-  @media screen and (min-width: calc(#{$tablet} + 1px)) and (max-width: calc(#{$laptop} - 1px)) {
-    padding-top: 132px;
+  @media screen and (min-width: $laptop) {
+    padding-top: 130px;
   }
 }
 .section__decor {
   position: relative;
+  padding-bottom: 60px;
 }
 
 .section__decor::before {
@@ -95,6 +96,7 @@ body {
 
   @media screen and (min-width: $desktop) {
     font-size: 40px;
+    margin-bottom: 40px;
   }
 }
 

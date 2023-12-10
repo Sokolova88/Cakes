@@ -8,13 +8,15 @@
     position: relative;
     padding-bottom: 78px;
   }
+
+  @media screen and (min-width: $laptop) {
+    padding-top: 90px;
+  }
 }
 
 .about__wrap {
-  padding-bottom: 20px;
-
   @media screen and (min-width: $desktop) {
-    padding-bottom: 120px;
+    padding-bottom: 60px;
   }
 }
 
