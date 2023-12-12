@@ -555,8 +555,8 @@ body.modal--open {
   padding: 60px;
   background-color: #7b6152;
   z-index: 999;
-  -webkit-transform: translateY(-110%);
-          transform: translateY(-110%);
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
   -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
