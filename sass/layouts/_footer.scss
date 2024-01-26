@@ -64,6 +64,10 @@
   @include flex();
   gap: 15px;
   margin-top: 15px;
+
+  &-item .social__link {
+    margin-top: 0;
+  }
 }
 
 .contacts__footer {
