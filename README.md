@@ -69,15 +69,15 @@ window and "Scroll to top" button for user convenience.
 
 ## Screenshots
 
-![Home Page](./src/images/screens/hero-section.png) _Caption for Screenshot 1 - Hero Section_
-![Home Page](./src/images/screens/about-section.png) _Caption for Screenshot 2 - About Section_
+![Home Page](./images/screens/hero-section.png) _Caption for Screenshot 1 - Hero Section_
+![Home Page](./images/screens/about-section.png) _Caption for Screenshot 2 - About Section_
 
 <p align="center">
-  <img src="./src/img/images/screens/menu-section.png" alt="Screenshot 3 - Menu Section">
-  <img src="./src/img/images/screens/last-sections.png" alt="Screenshot 4 - Last Section">
+  <img src="./images/screens/menu-section.png" alt="Screenshot 3 - Menu Section">
+  <img src="./images/screens/last-sections.png" alt="Screenshot 4 - Last Section">
 </p>
 
-_Caption for Screenshot 2 - Last Sections_
+_Caption for Screenshot 4 - Last Sections_
 
 ## Issues
 
